@@ -20,6 +20,6 @@ def ch_url():
         file_name = file_name.split('"')[1]
     except ValueError:
         print("Что-то не так с ссылкой. Попробуйте указать полный адрес.")
-        exit()
+        exit(0)
     else:
         return url, file_name, content_length

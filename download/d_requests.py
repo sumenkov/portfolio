@@ -2,10 +2,9 @@ import requests
 
 from download.utils import check_out_url, progressBar as pB
 
-url, filename, content = check_out_url.ch_url()
-
 
 def run_prm():
+    url, filename, content = check_out_url.ch_url()
     print(f'Скачиваем файл: {filename}')
     # stream позволяет сделать получение контента по условию, а не сразу при первом запросе
     r = requests.get(url=url, stream=True)

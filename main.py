@@ -3,6 +3,8 @@ import os
 import sys
 
 from with_random_numbers import guess_the_number, rock_paper_scissors
+from download import d_requests, d_urllib, d_youtube
+
 
 def menu():
     """
@@ -74,7 +76,7 @@ def menu2(name_dir=""):
             elif num < 0 or num > len(list2):
                 print("Нет такого пункта. Пожалуйста, будьте внимательней!")
             else:
-                # status = False
+                status = False
                 num_menu = num - 1
                 name_prm = list2[num_menu]
                 print("Запуск программы " + name_prm + ":", '\n')

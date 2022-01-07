@@ -1,7 +1,5 @@
 from download.utils import check_out_url
 
-url, filename = check_out_url.ch_url()
-
 
 def run_prm():
     pass

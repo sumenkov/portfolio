@@ -4,10 +4,9 @@ import urllib.request
 
 from download.utils import check_out_url, progressBar as pB
 
-url, filename, content = check_out_url.ch_url()
-
 
 def run_prm():
+    url, filename, content = check_out_url.ch_url()
     print(f'Скачиваем файл: {filename}')
 
     headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv: 95.0) Gecko/20100101 Firefox/95.0'}
