@@ -14,8 +14,15 @@ def player_guess(min_num, max_num):
     Функция, которая запрашивает у игрока число.
     возвращает случайное целое число
     """
-    user_input = int(input(f'Угадай число от {min_num} до {max_num}: '))
-    return user_input
+    status = True
+    while status:
+        try:
+            user_input = int(input(f'Угадай число от {min_num} до {max_num}: '))
+        except ValueError:
+            print("Это было не число, попробуйте еще раз.")
+        else:
+            status = False
+            return user_input
 
 
 def run_prm():
