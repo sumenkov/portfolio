@@ -1,7 +1,6 @@
 import requests
 
-import check_out_url
-import progressBar as pB
+from download.utils import check_out_url, progressBar as pB
 
 url, filename, content = check_out_url.ch_url()
 
