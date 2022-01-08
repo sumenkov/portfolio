@@ -4,6 +4,7 @@ import sys
 from with_random_numbers import guess_the_number, rock_paper_scissors
 from download import d_requests, d_urllib, d_youtube
 from backup import backup_win
+from go_email import go_email
 
 
 def menu():
