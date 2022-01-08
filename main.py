@@ -1,4 +1,3 @@
-# Портфолио на junior Python
 import os
 import sys
 
