@@ -3,6 +3,7 @@ import sys
 
 from with_random_numbers import guess_the_number, rock_paper_scissors
 from download import d_requests, d_urllib, d_youtube
+from backup import backup_win
 
 
 def menu():
@@ -57,7 +58,6 @@ def menu2(name_dir=""):
             list2.append(i.split(sep='.')[0])
 
     list2 = sorted(list2)
-    print("Меню " + name_dir + ":")
 
     # зацикливаем меню до правильного выбора или выхода
     status = True
