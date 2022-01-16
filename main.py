@@ -5,6 +5,7 @@ from with_random_numbers import guess_the_number, rock_paper_scissors
 from download import d_requests, d_urllib, d_youtube
 from backup import backup_win
 from go_email import go_email
+from telecom_engineering import tcp_srv
 
 
 def menu():
@@ -18,7 +19,7 @@ def menu():
 
     # Список директорий в рабочей директории
     for i in os.listdir(example_dir):
-        if os.path.isdir(i) and i not in ["venv", ".idea", ".git", "back"]:
+        if os.path.isdir(i) and i not in ["venv", ".idea", ".git", "back", "venv_linux"]:
             list1.append(i)
 
     list1 = sorted(list1)
